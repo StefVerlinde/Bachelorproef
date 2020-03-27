@@ -1,0 +1,45 @@
+%---------- Inleiding ---------------------------------------------------------
+
+\section{Introductie} % The \section*{} command stops section numbering
+\label{sec:introductie}
+
+Het framework OAuth 2.0 is een autorisatie framework dat gebruik maakt van keys. OAuth 2.0 wordt gebruikt als een manier voor gebruikers om applicaties toegang te geven tot hun informatie van een betrouwde applicatie, maar zonder hun wachtwoord rechtstreeks op de onbekende applicatie in te geven. In plaats hiervan wordt het wachtwoord op de oauth server ingegeven. Voordat OAuth in omgang was maakten services gebruik van de effectieve wachtwoorden van de gebruiker en niet de key die van de oauth server teruggestuurd wordt om zo aan de gegevens van de gebruiker te kunnen. Er was geen zekerheid wat er hierna met het wachtwoord gebeurde, hierdoor is OAuth in het leven geroepen. Dit framework wordt gebruikt door bedrijven zoals Google, Facebook, Microsoft en Twitter om de gebruikers in staat te stellen informatie over hun accounts te delen met applicaties van derden.\newline\newline
+In dit onderzoek ga ik op zoek naar de verschillende validatiemogelijkheden van OAuth 2.0 aan de hand van rolling keys, vergelijk ik die met alternatieven en zijn voorganger OAuth en bespreek ik de implementatie in de bedrijfswereld.
+
+%---------- Stand van zaken ---------------------------------------------------
+
+\section{Stand van zaken}
+\label{sec:state-of-the-art}
+
+Bij grotere bedrijven wordt dit framework al enkele jaren gebruikt en blijft het ook gebruikt worden door de eenvoud en veiligheid. Kleinere bedrijven gaan ook steeds meer aan de slag met OAuth 2.0 en er is ook veel vraag naar binnen development. Op het internet is er ook veel uitleg over het OAuth 2.0 framework, maar dan vooral over de technische werking (\cite{Deniss2016}). \newline\newline
+Dit is dus een onderwerp waar nog veel over onderzocht kan worden en waar veel belangrijke randinformatie over te vinden valt. Enkele huidige OAuth service providers zijn Amazon, Apple, Facebook, Github en nog enkelen.
+
+% Voor literatuurverwijzingen zijn er twee belangrijke commando's:
+% \autocite{KEY} => (Auteur, jaartal) Gebruik dit als de naam van de auteur
+%   geen onderdeel is van de zin.
+% \textcite{KEY} => Auteur (jaartal)  Gebruik dit als de auteursnaam wel een
+%   functie heeft in de zin (bv. ``Uit onderzoek door Doll & Hill (1954) bleek
+%   ...'')
+
+
+%---------- Methodologie ------------------------------------------------------
+\section{Methodologie}
+\label{sec:methodologie}
+
+Om de volledige werking van OAuth 2.0 te onderzoeken, zal ik mij baseren op reeds bestaande literatuur over de veiligheid en werking van het framework. In een paper van Erik Chen is te lezen hoe het protocol al verschillende malen herwerkt is de voorbije jaren en ook dat het verschillend is voor webapplicaties en mobiele applicaties (\cite{Chen2014}). \newline 
+Met deze informatie zal ik afwegen welke validatiemogelijkheden er bestaan met OAuth 2.0. Van deze informatie zal ik dan gebruik maken om het OAuth 2.0 framework te gebruiken in een applicatie om mij zo nog meer te verdiepen in de werking en mogelijkheden. Al deze resultaten zal ik met elkaar gaan vergelijken om zo de validatiemogelijkheden en voor-/nadelen van het framework te achterhalen.
+
+%---------- Verwachte resultaten ----------------------------------------------
+\section{Verwachte resultaten}
+\label{sec:verwachte_resultaten}
+
+Ik verwacht de werking van het OAuth 2.0 framework te doorgronden en zo de voordelen van de eenvoud en veiligheid te kunnen documenteren en dit framework te vergelijken met andere authenticatieframeworks of voorgangers van het framework. Ik verwacht ook dat ik enkele fouten van het framework zal tegenkomen. Zo lees je in de papers van Pili Hu en Eugene Ferry dat er de voorbije jaren al veel aanvallen, loopholes en fouten zijn ontdekt in het framework. Deze zou ik ook gaan onderzoeken. Ik wil kijken waar er al wel of niet verbeteringen aangebracht zijn (\cite{Hu2014}) (\cite{Ferry2015}). \newline
+Door deze vergelijkingen te maken, hoop ik de mogelijkheden en voor-/nadelen van het framework te vinden en deze te kunnen documenteren en aan te tonen. 
+
+%---------- Verwachte conclusies ----------------------------------------------
+\section{Verwachte conclusies}	
+\label{sec:verwachte_conclusies}
+
+Na het onderzoek en een proof of concept te maken hoop ik met mijn kennis over het OAuth 2.0 framwork een document te kunnen samenstellen waar ik de voordelen en eventuele nadelen over het OAuth 2.0 framework bespreek. Zo zou ik het graag hebben over de veiligheid, eenvoud en werking van OAuth 2.0. Hier wil ik mee bereiken dat bedrijven aan de hand van dit document kunnen beslissen of ze het OAuth 2.0 framework zullen opnemen in toekomstige projecten bij hun klanten.
+
+
