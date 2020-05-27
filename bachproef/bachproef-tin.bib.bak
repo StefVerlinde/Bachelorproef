@@ -91,4 +91,22 @@
   url    = {https://docs.microsoft.com/bs-latn-ba/azure/active-directory/develop/active-directory-v2-protocols},
 }
 
+@Online{rwike772019a,
+  author = {rwike77},
+  editor = {rwike77},
+  title  = {Microsoft identity platform and OpenID Connect protocol},
+  year   = {2019},
+  date   = {2019-04-12},
+  url    = {https://docs.microsoft.com/bs-latn-ba/azure/active-directory/develop/v2-protocols-oidc},
+}
+
+@Online{hpsin2020,
+  author = {hpsin},
+  editor = {hpsin},
+  title  = {Microsoft identity platform access tokens | Azure},
+  year   = {2020},
+  date   = {2020-05-18},
+  url    = {https://docs.microsoft.com/en-us/azure/active-directory/develop/access-tokens},
+}
+
 @Comment{jabref-meta: databaseType:biblatex;}
