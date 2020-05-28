@@ -7,18 +7,27 @@
 \section{\IfLanguageName{dutch}{Probleemstelling}{Problem Statement}}
 \label{sec:probleemstelling}
 
-De probleemstelling kan beschreven worden als een gebrekkige, onduidelijke of foutieve documentatie omtrent het onderwerp OAuth aan de hand van rolling keys op het internet. Het bedrijf Ventigrate verwacht dat ik dit probleem oplos door een volledige documentatie op te stellen rond OAuth aan de hand van rolling keys met bijhorende proof of concept. \newline\newline
-Mijn doelgroep bestaat uit Ventigrate met opdrachtgevers Kevin Pelkmans en Yannick Borghmans, maar kan ook interessant zijn voor bedrijven en zelfstandigen die interesse hebben om hun autorisatie- en authenticatiesysteem professioneel op te bouwen of bij te stellen.
+De probleemstelling kan beschreven worden als een gebrekkige, onduidelijke of foutieve documentatie omtrent het opzetten van een API of client aan de hand van Azure active directory op het internet. Dit was ook een probleem waar het bedrijf Ventigrate mee te kampen had. Dit bedrijf verwacht dus dat ik dit probleem oplos door een volledige documentatie op te stellen rond OAuth aan de hand van rolling keys met bijhorende proof of concepts. \newline\newline
+Mijn doelgroep bestaat uit Ventigrate met opdrachtgevers Kevin Pelkmans en Yannick Borghmans, maar kan ook interessant zijn voor bedrijven en zelfstandigen die interesse hebben om hun autorisatie- en authenticatiesysteem professioneel op te bouwen of bij te stellen.\newline\newline
+Ventigrate is een SharePoint- en .NET-competence center dat samen met klanten op zoek gaat naar een gebruiksvriendelijke manier om werknemers beter te laten samenwerken en helpt met bedrijfsprocessen te automatiseren.
 
 \section{\IfLanguageName{dutch}{Onderzoeksvraag}{Research question}}
 \label{sec:onderzoeksvraag}
 
-De onderzoeksvraag voor dit onderzoek kan duidelijk geformuleerd worden als: "Hoe kan Ventigrate op een professionele manier een OAuth-autorisatieserver opzetten aan de hand van azure active directory rolling keys?" 
+De onderzoeksvraag voor dit onderzoek kan duidelijk geformuleerd worden als: "Hoe kan Ventigrate op een professionele manier APIs en clients opzetten beveiligd door Azure active directory aan de hand van rolling keys?".\newline
+Deze onderzoeksvraag kan opgesplitst worden in deelvragen. Deze luiden:
+\begin{itemize}
+	\item Hoe werkt JWT Bearer token authenticatie?
+	\item Hoe beveilig je een API met client credentials grant?
+	\item Hoe beveilig je een API met implicit grant?
+	\item Hoe beveilig je een API met authorization code grant?
+	\item Wat gebeurt er bij een Azure key rollover?
+\end{itemize}
 
 \section{\IfLanguageName{dutch}{Onderzoeksdoelstelling}{Research objective}}
 \label{sec:onderzoeksdoelstelling}
 
-De doelstelling voor dit onderzoek is het opbouwen van een complete proof of concept met bijhorende documentatie voor het opzetten van een autorisatieserver. Dit onderzoek wordt als een succes beschouwd als Ventigrate met gebruik van deze documentatie een volledig en correct idee heeft over wat OAuth inhoudt en hoe dit samenspeelt met azure. Ook moet Ventigrate in staat zijn om samen met de proof of concept een autorisatieserver op te zetten voor het bedrijf zonder extra bronnen van derden te raadplegen.
+De doelstelling voor dit onderzoek is het opbouwen van een complete proof of concept met bijhorende documentatie voor het opzetten van APIs en clients beveiligd met Azure active directory. Dit onderzoek wordt als een succes beschouwd als Ventigrate met gebruik van deze documentatie een volledig en correct idee heeft over wat OAuth inhoudt en hoe dit samenspeelt met Azure. Ook moet Ventigrate in staat zijn om samen met de proof of concept APIs en clients op te zetten voor het bedrijf zonder extra bronnen van derden te raadplegen.
 
 \section{\IfLanguageName{dutch}{Opzet van deze bachelorproef}{Structure of this bachelor thesis}}
 \label{sec:opzet-bachelorproef}
@@ -35,4 +44,4 @@ In Hoofdstuk~\ref{ch:methodologie} wordt de methodologie toegelicht en worden de
 
 % TODO: Vul hier aan voor je eigen hoofstukken, één of twee zinnen per hoofdstuk
 
-In Hoofdstuk~\ref{ch:conclusie}, tenslotte, wordt de conclusie gegeven en een antwoord geformuleerd op de onderzoeksvragen. Daarbij wordt ook een aanzet gegeven voor toekomstig onderzoek binnen dit domein.
+In Hoofdstuk~\ref{ch:conclusie}, ten slotte, wordt de conclusie gegeven en een antwoord geformuleerd op de onderzoeksvragen. Daarbij wordt ook een aanzet gegeven voor toekomstig onderzoek binnen dit domein.
