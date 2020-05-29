@@ -118,7 +118,7 @@ Om een ID token of een access token te valideren, moet de applicatie zowel de ha
 
 \section{\IfLanguageName{dutch}{Proof of concept met client credentials grant type}{Proof of concept with client credentials grant type}}
 \label{sec:Client_Credentials_Grant}
-In de proof of concept met client credentials grant wordt er een weervoorspelling API gemaakt als voorbeeld, deze API zal willekeurige weervoorspelling terug geven na een call van de client. Deze weervoorspelling API zal beveiligd worden met bearer authentication. Er wordt ook een weervoorspelling client gemaakt die een GET request zal doen naar de API om zo aan de weervoorspelling data te komen. De communicatie of deze client toegang heeft tot de data op de API gebeurt dan met Azure active directory. Deze kan in dit voorbeeld met de identity server van OAuth vergeleken worden. Wanneer deze proof of concept correct geïmplementeerd is ziet deze er als volgt uit (figuur \ref{fig:pocfinal}). Hoe dit schema wordt opgesteld wordt in dit hoofdstuk stap voor stap besproken.
+In de proof of concept met client credentials grant wordt er een weervoorspelling API gemaakt als voorbeeld, deze API zal willekeurige weervoorspelling terug geven na een call van de client (POC \cite{Verlinde2020}). Deze weervoorspelling API zal beveiligd worden met bearer authentication. Er wordt ook een weervoorspelling client gemaakt die een GET request zal doen naar de API om zo aan de weervoorspelling data te komen. De communicatie of deze client toegang heeft tot de data op de API gebeurt dan met Azure active directory. Deze kan in dit voorbeeld met de identity server van OAuth vergeleken worden. Wanneer deze proof of concept correct geïmplementeerd is ziet deze er als volgt uit (figuur \ref{fig:pocfinal}). Hoe dit schema wordt opgesteld wordt in dit hoofdstuk stap voor stap besproken.\newpage
 \begin{figure}[H]
 	\centering
 	\includegraphics{POC_Final} 
@@ -300,7 +300,7 @@ Vanaf nu is alles aanwezig om een connectie met Azure te maken. In dit voorbeeld
 Na het uitvoeren van deze code is volgende connectie succesvol gelegd. Een client, in dit geval de weervoorspelling client, kan nu een access token ophalen van de Azure active directory.
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.60]{POC3} 
+	\includegraphics[scale=0.55]{POC3} 
 	\caption[POC3]{Hier wordt schematisch afgebeeld dat de client nu een access token van AAD kan ophalen.}
 	\label{fig:poc3}
 \end{figure}
@@ -308,7 +308,7 @@ Om het schema compleet te maken moet de client met deze access token om de API d
 Ten eerste wordt gecheckt of er een access token van Azure active directory aanwezig is. Daarna wordt er een httpClient aangemaakt en wordt er gecheckt of de defaultRequestHeaders het media type json accepteren. Daarna wordt het  type op bearer gezet en wordt er een GET methode naar de API gestuurd. Als de response succesvol is wordt deze uitgeprint, zo niet wordt de errorboodschap getoond (figuur \ref{fig:aquireData}).
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.73]{AquireData} 
+	\includegraphics[scale=0.70]{AquireData} 
 	\caption[AquireData]{Deze code toont het ophalen van data aan de hand van een access token op de API.}
 	\label{fig:aquireData}
 \end{figure}\newpage
@@ -321,7 +321,7 @@ Door deze code is het schema compleet en kan de client met een access token van 
 \end{figure}
 \section{\IfLanguageName{dutch}{Proof of concept met implicit grant type}{Proof of concept with implicit grant type}}
 \label{sec:Microsift_signon}
-Het verschil met client credential grant authentication en implicit grant authentication is dat er bij implicit grant input van de gebruiker verwacht wordt. Namelijk een gebruikersnaam en wachtwoord, hierdoor zijn er enkele extra stappen in de flow voor de authentication. Bij client credential grant is er geen input van de gebruiker, zoals gezien in de eerste proof of concept.
+Het verschil met client credential grant authentication en implicit grant authentication is dat er bij implicit grant input van de gebruiker verwacht wordt. Namelijk een gebruikersnaam en wachtwoord, hierdoor zijn er enkele extra stappen in de flow voor de authentication. Bij client credential grant is er geen input van de gebruiker, zoals gezien in de eerste proof of concept (POC \cite{Verlinde2020}).
 \subsection{\IfLanguageName{dutch}{Registratie in azure}{Registration in Azure}}
 Om een client met implicit grant authentication toe te voegen aan de Azure active directory gaat de gebruiker naar “App-registraties” in de Azure portal bij active directory. Hier wordt opnieuw een nieuwe client toegevoegd met de knop “Nieuwe registratie”. Als naam wordt hier “SignOnClient” genomen, de andere instellingen houden we op de default instellingen (figuur \ref{fig:azure16}). 
 \begin{figure}[H]
